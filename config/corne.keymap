@@ -11,7 +11,7 @@
 #define NTIL &uc 00F1 00D1 // ñ Ñ
 #define PI &uc 03C0 // π
 
-then add them in a layer with &kp EAIG
+
 
 &spi1 {
 	compatible = "nordic,nrf-spim";
