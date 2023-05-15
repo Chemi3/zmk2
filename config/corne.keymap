@@ -49,6 +49,25 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <27 23 37>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            label = "NEW_MACRO";
+            #binding-cells = <0>;
+            bindings = <&caps_word &kp E &kp A &kp D &kp S>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
